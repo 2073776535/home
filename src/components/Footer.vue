@@ -23,8 +23,6 @@
           &amp;
           {{ siteIcp }}
         </a>
-        <!-- 公安备案码链接 -->
-        <a v-if="sitePublicSecurityCode" :href="https://beian.mps.gov.cn/#/query/webSearch?code=41090002410931" rel="noreferrer" target="_blank">{{ sitePublicSecurityCode }}</a>
       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
@@ -51,11 +49,9 @@ const fullYear = new Date().getFullYear();
 const siteStartDate = ref(import.meta.env.VITE_SITE_START);
 const siteIcp = ref(import.meta.env.VITE_SITE_ICP);
 const siteAnthor = ref(import.meta.env.VITE_SITE_ANTHOR);
-const sitePublicSecurityCode = ref(import.meta.env.VITE_SITE_PUBLIC_SECURITY_CODE);
-const securityLink = computed(() => `https://beian.mps.gov.cn/#/query/webSearch?code=${sitePublicSecurityCode.value}`);
 const siteUrl = computed(() => {
   const url = import.meta.env.VITE_SITE_URL;
-  if (!url) return "https://www.jikeg.com";
+  if (!url) return "https://www.imsyy.top";
   // 判断协议前缀
   if (!url.startsWith("http://") && !url.startsWith("https://")) {
     return "//" + url;
