@@ -23,6 +23,7 @@
           &amp;
           {{ siteIcp }}
         </a>
+        <a href="https://beian.mps.gov.cn/#/query/webSearch?code=41090002410931" rel="noreferrer" target="_blank">豫公网安备41090002410931</a>
       </div>
       <div v-else class="lrc">
         <Transition name="fade" mode="out-in">
