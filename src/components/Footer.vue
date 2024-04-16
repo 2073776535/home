@@ -23,7 +23,7 @@
           &amp;
           {{ siteIcp }}
         </a>
-        <img src="http://115.159.157.49/icon.png" style="width:20px;height:20px">
+        &amp;&nbsp;<img src="http://jikeg.com/icon.png" style="width:20px;height:20px">
         <a href="https://beian.mps.gov.cn/#/query/webSearch?code=41090002410931" rel="noreferrer" target="_blank">豫公网安备41090002410931</a>
       </div>
       <div v-else class="lrc">
